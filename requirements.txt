@@ -1,0 +1,2 @@
+Microsoft.ML.OnnxRuntime.Managed v1.23.0-dev-20250603-0558-cd5133371
+Microsoft.ML.OnnxRuntime.MIGraphX.Windows v1.23.0-dev-20250603-0558-cd5133371
