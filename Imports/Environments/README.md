@@ -9,4 +9,4 @@ To add experimental support for `Intel` or `AMD` devices, this can be done with 
 
 ---
 
-<img width="25%" src="../Assets/Imports1.PNG">
+<img width="25%" src="../../Assets/Imports1.PNG">
