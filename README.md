@@ -2,7 +2,7 @@
 Amuse is the flagship demo application for the [TensorStack SDK](https://github.com/saddam213/TensorStack), showcasing high-performance local AI image, video, audio and text generation through a modern, extensible .NET architecture.
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.7/Amuse_v3.5.7.exe">Download Amuse v3.5.7</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.8/Amuse_v3.5.8.exe">Download Amuse v3.5.8</a></h1>
 </div>
 
 ## Features
@@ -46,6 +46,8 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 - Kandinsky5
 - SkyReels-V2
 - Helios
+- Motif
+- AnyFlow
 
 ## Audio Pipelines
 - ACE-Step XL
@@ -56,10 +58,10 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 ---
 
 ## GPU Support
-Amuse utilizes `NVIDIA CUDA 12.8` for local hardware acceleration.
+Amuse utilizes `NVIDIA CUDA 13.0` for local hardware acceleration.
 
 ### Nvidia GPU Support
-Amuse leverages `CUDA 12.8`, providing native support for the latest generation of hardware.<br /> While legacy architectures (Pascal/Maxwell) are technically supported, an RTX-enabled card is strongly recommended to utilize Tensor Cores for efficient generation speeds.
+Amuse leverages `CUDA 13.0`, providing native support for the latest generation of hardware.<br /> While legacy architectures (Pascal/Maxwell) are technically supported, an RTX-enabled card is strongly recommended to utilize Tensor Cores for efficient generation speeds.
 <table>
   <thead>
     <tr>
@@ -92,7 +94,7 @@ Amuse leverages `CUDA 12.8`, providing native support for the latest generation 
   </tbody>
 </table>
 
-> Note: Minimum Driver (NVIDIA): `Version 527.41` or later is required for `CUDA 12.8` compatibility.
+> Note: Minimum Driver (NVIDIA): `Version 580.65` or later is required for `CUDA 13.0` compatibility.
 
 ---
 
@@ -122,6 +124,6 @@ Intel AI Playground:
 
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.7/Amuse_v3.5.7.exe">Download Amuse v3.5.7</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.8/Amuse_v3.5.8.exe">Download Amuse v3.5.8</a></h1>
 </div>
 
