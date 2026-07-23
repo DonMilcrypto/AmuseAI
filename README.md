@@ -2,7 +2,7 @@
 Amuse is the flagship demo application for the [TensorStack SDK](https://github.com/saddam213/TensorStack), showcasing high-performance local AI image, video, audio and text generation through a modern, extensible .NET architecture.
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.8/Amuse_v3.5.8.exe">Download Amuse v3.5.8</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.6.80/Amuse_v3.6.0.exe">Download Amuse v3.6.0</a></h1>
 </div>
 
 ## Features
@@ -52,8 +52,11 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 ## Audio Pipelines
 - ACE-Step XL
 - Whisper
-- Supertonic
+- Supertonic v3
 - LongCat Audio
+
+## Text Pipelines
+- Qwen3
 
 ---
 
@@ -124,7 +127,7 @@ Intel AI Playground:
 
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.8/Amuse_v3.5.8.exe">Download Amuse v3.5.8</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.6.0/Amuse_v3.6.0.exe">Download Amuse v3.6.0</a></h1>
 </div>
 
 
