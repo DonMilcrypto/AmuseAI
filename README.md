@@ -127,3 +127,11 @@ Intel AI Playground:
    <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.5.8/Amuse_v3.5.8.exe">Download Amuse v3.5.8</a></h1>
 </div>
 
+
+### External Dependencies
+- `PdfPig` https://github.com/UglyToad/PdfPig
+- `Markdig` https://github.com/xoofx/markdig
+- `Serilog` https://github.com/serilog/serilog
+- `ColorCode` https://github.com/CommunityToolkit/ColorCode-Universal
+- `TensorStack` https://github.com/saddam213/TensorStack
+- `HtmlAgilityPack` https://github.com/zzzprojects/html-agility-pack
