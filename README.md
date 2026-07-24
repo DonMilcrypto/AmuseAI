@@ -61,9 +61,6 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 ---
 
 ## GPU Support
-Amuse utilizes `NVIDIA CUDA 13.0` for local hardware acceleration.
-
-### Nvidia GPU Support
 Amuse leverages `CUDA 13.0`, providing native support for the latest generation of hardware.<br /> While legacy architectures (Pascal/Maxwell) are technically supported, an RTX-enabled card is strongly recommended to utilize Tensor Cores for efficient generation speeds.
 <table>
   <thead>
@@ -75,56 +72,33 @@ Amuse leverages `CUDA 13.0`, providing native support for the latest generation 
   </thead>
   <tbody>
     <tr>
-      <td><b>Blackwell</b> (SM_100)</td>
-      <td>Windows 10, 11, Server 22</td>
-      <td>GeForce RTX 5090, 5080, 5070 Ti, 5070; RTX PRO Blackwell series</td>
+      <td><b>Blackwell</b><br/>(SM_100)</td>
+      <td>Windows 10<br/>Windows 11*<br/>Server 2022</td>
+      <td>GeForce RTX 5090, 5080, 5070 Ti, 5070;<br/>RTX PRO Blackwell series</td>
     </tr>
     <tr>
-      <td><b>Ada Lovelace</b> (SM_89)</td>
-      <td>Windows 10, 11, Server 22</td>
-      <td>GeForce RTX 4090, 4080, 4070 Ti/Super, 4070, 4060 Ti, 4060; RTX 6000/5000/4000 Ada</td>
+      <td><b>Ada Lovelace</b><br/>(SM_89)</td>
+      <td>Windows 10<br/>Windows 11*<br/>Server 2022</td>
+      <td>GeForce RTX 4090, 4080, 4070 Ti/Super, 4070, 4060 Ti, 4060;<br/>RTX 6000/5000/4000 Ada</td>
     </tr>
     <tr>
-      <td><b>Ampere</b> (SM_86)</td>
-      <td>Windows 10, 11, Server 22</td>
-      <td>GeForce RTX 3090 Ti, 3090, 3080 Ti, 3080, 3070 Ti, 3070, 3060 Ti, 3060; RTX A-series (A6000, etc.)</td>
+      <td><b>Ampere</b><br/>(SM_86)</td>
+      <td>Windows 10<br/>Windows 11*<br/>Server 2022</td>
+      <td>GeForce RTX 3090 Ti, 3090, 3080 Ti, 3080, 3070 Ti, 3070, 3060 Ti, 3060;<br/>RTX A-series (A6000, etc.)</td>
     </tr>
     <tr>
-      <td><b>Turing</b> (SM_75)</td>
-      <td>Windows 10, 11, Server 22</td>
-      <td>GeForce RTX 2080 Ti, 2080 Super, 2070, 2060; GTX 1660 Ti, 1660 Super, 1650</td>
+      <td><b>Turing</b><br/>(SM_75)</td>
+      <td>Windows 10<br/>Windows 11*<br/>Server 2022</td>
+      <td>GeForce RTX 2080 Ti, 2080 Super, 2070, 2060;<br/>GTX 1660 Ti, 1660 Super, 1650</td>
     </tr>
   </tbody>
 </table>
 
 > Note: Minimum Driver (NVIDIA): `Version 580.65` or later is required for `CUDA 13.0` compatibility.
 
----
-
-### AMD GPU Support
-AMD GPU's are currently not supported<br />
-For `AMD` devices I recommend `ComfyUI` or `AMD Lemonade Server`, these will have full support for AMD.
-
-ComfyUI:
-[https://comfy.org/](https://comfy.org/)
-
-Lemonade Server:
-[https://lemonade-server.ai/](https://lemonade-server.ai/)
+> ** Windows 11 users may need to `Run As Administrator` during environment creation if there are failures.
 
 ---
-
-### Intel GPU Support
-Intel GPU's are currently not supported<br />
-For `Intel` devices I recommend `ComfyUI` or `Intel AI Playground`, these will have full support for Intel.
-
-ComfyUI:
-[https://comfy.org/](https://comfy.org/)
-
-Intel AI Playground:
-[https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/ai-playground.html](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/ai-playground.html)
-
----
-
 
 <div align="center">
    <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.6.1/Amuse_v3.6.1.exe">Download Amuse v3.6.1</a></h1>
