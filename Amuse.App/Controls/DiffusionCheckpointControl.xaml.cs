@@ -27,7 +27,7 @@ namespace Amuse.App.Controls
         }
 
         public static readonly DependencyProperty SettingsProperty = DependencyProperty.Register(nameof(Settings), typeof(Settings), typeof(DiffusionCheckpointControl));
-        public static readonly DependencyProperty CheckpointProperty = DependencyProperty.Register(nameof(Checkpoint), typeof(CheckpointModel), typeof(DiffusionCheckpointControl), new PropertyMetadata<DiffusionCheckpointControl, CheckpointModel>((c, o, n) => c.OnCheckpointChanged(o, n)));
+        public static readonly DependencyProperty CheckpointProperty = DependencyProperty.Register(nameof(Checkpoint), typeof(DiffusionCheckpointModel), typeof(DiffusionCheckpointControl), new PropertyMetadata<DiffusionCheckpointControl, DiffusionCheckpointModel>((c, o, n) => c.OnCheckpointChanged(o, n)));
         public static readonly DependencyProperty BackendProperty = DependencyProperty.Register(nameof(Backend), typeof(BackendType), typeof(DiffusionCheckpointControl));
         public ObservableCollection<CheckpointComponent> Components { get; }
         public CheckpointType[] ComputeCheckpointTypes { get; }
@@ -39,9 +39,9 @@ namespace Amuse.App.Controls
             set { SetValue(SettingsProperty, value); }
         }
 
-        public CheckpointModel Checkpoint
+        public DiffusionCheckpointModel Checkpoint
         {
-            get { return (CheckpointModel)GetValue(CheckpointProperty); }
+            get { return (DiffusionCheckpointModel)GetValue(CheckpointProperty); }
             set { SetValue(CheckpointProperty, value); }
         }
 
@@ -58,7 +58,7 @@ namespace Amuse.App.Controls
         }
 
 
-        private Task OnCheckpointChanged(CheckpointModel previous, CheckpointModel checkpoint)
+        private Task OnCheckpointChanged(DiffusionCheckpointModel previous, DiffusionCheckpointModel checkpoint)
         {
             Components.Clear();
             if (checkpoint != null)
@@ -70,10 +70,12 @@ namespace Amuse.App.Controls
 
                 if (checkpoint.Compute != null)
                     SelectedIndex = 0;
-                if (checkpoint.Unet != null)
+                else if (checkpoint.Unet != null)
                     SelectedIndex = 4;
-                if (checkpoint.Transformer != null)
+                else  if (checkpoint.Transformer != null)
                     SelectedIndex = 5;
+                else if (checkpoint.TextEncoder != null)
+                    SelectedIndex = 1;
             }
             return Task.CompletedTask;
         }
