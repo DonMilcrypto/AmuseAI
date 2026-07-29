@@ -4,7 +4,7 @@
   "Vendor": "AMD",
   "Environment": "rocm-721",
   "PythonVersion": "3.12",
-  "Version": 10,
+  "Version": 12,
   "Status": "Create",
   "Variables": {
     "MIOPEN_FIND_MODE": "2",
@@ -21,7 +21,7 @@
     "https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torchvision-0.24.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl",
     "typing==3.7.4.3",
     "wheel==0.47.0",
-    "transformers==5.5.4",
+    "transformers==5.13.1",
     "accelerate==1.14.0",
     "diffusers==0.39.0",
     "protobuf==7.35.1",
@@ -34,6 +34,6 @@
     "av==18.0.0",
     "soundfile==0.14.0",
     "optimum-quanto==0.2.7",
-    "https://github.com/0xDELUXA/bitsandbytes_win_rocm/releases/download/v0.49.2.dev0-py312-rocm7.12-all/bitsandbytes-0.49.2.dev0-cp312-cp312-win_amd64.whl"
+    "bitsandbytes==0.50.0"
   ]
 }
