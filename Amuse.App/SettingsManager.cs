@@ -132,6 +132,9 @@ namespace Amuse.App
                         {
                             if (environment.Id > 1000)
                             {
+                                if (environment.Id == 2000)
+                                    continue;
+
                                 // Add back any Environments the user has created
                                 if (!defaultSettings.Environments.Any(x => x.Id == environment.Id))
                                     defaultSettings.Environments.Add(environment);
@@ -176,6 +179,9 @@ namespace Amuse.App
                         {
                             if (diffusionModel.Id > 1000)
                             {
+                                if (diffusionModel.Backend == TensorStack.Common.BackendType.OnnxRuntime)
+                                    continue;
+
                                 if (!defaultSettings.DiffusionModels.Any(x => x.Id == diffusionModel.Id))
                                     defaultSettings.DiffusionModels.Add(diffusionModel);
                             }
