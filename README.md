@@ -2,7 +2,7 @@
 Amuse is the flagship demo application for the [TensorStack SDK](https://github.com/saddam213/TensorStack), showcasing high-performance local AI image, video, audio and text generation through a modern, extensible .NET architecture.
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.6.3/Amuse_v3.6.3.exe">Download Amuse v3.6.3</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.7.0/Amuse_v3.7.0.exe">Download Amuse v3.7.0</a></h1>
 </div>
 
 ## Features
@@ -36,6 +36,7 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 - PRX-Pixel
 - Krea2
 - GLM Image
+- Ideogram 4
 
 ## Video Pipelines
 - LTX
@@ -59,6 +60,7 @@ Amuse is the flagship demo application for the [TensorStack SDK](https://github.
 - Qwen 3.0
 - Qwen 3.5
 - Qwen 3.6
+- Qwen 3.8
 - Gemma 4.0
 ---
 
@@ -103,7 +105,7 @@ Amuse leverages `CUDA 13.0`, providing native support for the latest generation 
 ---
 
 <div align="center">
-   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.6.3/Amuse_v3.6.3.exe">Download Amuse v3.6.3</a></h1>
+   <h1><a href="https://github.com/saddam213/AmuseAI/releases/download/v3.7.0/Amuse_v3.7.0.exe">Download Amuse v3.7.0</a></h1>
 </div>
 
 
@@ -113,4 +115,6 @@ Amuse leverages `CUDA 13.0`, providing native support for the latest generation 
 - `Serilog` https://github.com/serilog/serilog
 - `ColorCode` https://github.com/CommunityToolkit/ColorCode-Universal
 - `TensorStack` https://github.com/saddam213/TensorStack
-- `HtmlAgilityPack` https://github.com/zzzprojects/html-agility-pack
+- `Diffusers` https://github.com/huggingface/diffusers
+- `Transformers` https://github.com/huggingface/transformers
+- `StableDiffusion.cpp` https://github.com/leejet/stable-diffusion.cpp
