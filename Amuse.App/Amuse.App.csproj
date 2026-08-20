@@ -21,8 +21,8 @@
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
     <PackageReference Include="PdfPig" Version="0.1.15" />
     <PackageReference Include="System.Linq.Async" Version="7.0.1" />
-    <PackageReference Include="System.Management" Version="10.0.10" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
+    <PackageReference Include="System.Management" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.11" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     <PackageReference Include="Markdig" Version="1.3.2" />
@@ -32,17 +32,15 @@
 
   <!--Debug-->
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <ProjectReference Include="..\..\TensorStack.WPF\TensorStack.WPF.csproj" />
     <ProjectReference Include="..\..\TensorStack.Common\TensorStack.Common.csproj" />
-    <ProjectReference Include="..\..\TensorStack.Image.BitmapImage\TensorStack.Image.BitmapImage.csproj" />
     <ProjectReference Include="..\..\TensorStack.Upscaler\TensorStack.Upscaler.csproj" />
     <ProjectReference Include="..\..\TensorStack.Extractors\TensorStack.Extractors.csproj" />
     <ProjectReference Include="..\..\TensorStack.TextGeneration\TensorStack.TextGeneration.csproj" />
-    <ProjectReference Include="..\..\TensorStack.Audio.Windows\TensorStack.Audio.Windows.csproj" />
-    <ProjectReference Include="..\..\TensorStack.WPF\TensorStack.WPF.csproj" />
     <ProjectReference Include="..\..\TensorStack.Providers.DML\TensorStack.Providers.DML.csproj" />
-    <ProjectReference Include="..\..\TensorStack.Audio\TensorStack.Audio.csproj" />
-    <ProjectReference Include="..\..\TensorStack.Image\TensorStack.Image.csproj" />
-    <ProjectReference Include="..\..\TensorStack.Video.Windows\TensorStack.Video.Windows.csproj" />
+    <ProjectReference Include="..\..\TensorStack.Media\TensorStack.Media.csproj" />
+    <ProjectReference Include="..\..\TensorStack.Media.Windows\TensorStack.Media.Windows.csproj" />
+    <ProjectReference Include="..\..\TensorStack.Media.BitmapImage\TensorStack.Media.BitmapImage.csproj" />
   </ItemGroup>
 
   <!--Release-->
