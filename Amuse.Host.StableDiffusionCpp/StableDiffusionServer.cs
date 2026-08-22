@@ -416,13 +416,13 @@ namespace Amuse.Host.StableDiffusionCpp
             else if (serverConfig.MemoryMode == MemoryModeType.OffloadCPU)
             {
                 argumentBuilder.Append("--offload-to-cpu ");
-                argumentBuilder.Append("--params-backend te=disk,vae=disk,clip_vision=disk ");
+                argumentBuilder.Append("--params-backend diffusion=cpu,vae=disk,te=disk,clip_vision=disk ");
                 argumentBuilder.Append("--stream-layers ");
             }
             else if (serverConfig.MemoryMode == MemoryModeType.OffloadModel)
             {
                 argumentBuilder.Append("--offload-to-cpu ");
-                argumentBuilder.Append("--params-backend te=disk,vae=disk,clip_vision=disk ");
+                argumentBuilder.Append("--params-backend diffusion=cpu,vae=disk,te=disk,clip_vision=disk ");
             }
 
             if (serverConfig.MemoryMode == MemoryModeType.Device)
@@ -448,6 +448,7 @@ namespace Amuse.Host.StableDiffusionCpp
 
             argumentBuilder.Append("--rng cpu ");
             argumentBuilder.Append("--lora-apply-mode at_runtime ");
+            argumentBuilder.Append("--force-sdxl-vae-conv-scale ");
             if (serverConfig.IsDebug)
                 argumentBuilder.Append("-v ");
             return argumentBuilder.ToString();

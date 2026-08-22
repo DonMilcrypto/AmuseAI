@@ -21,7 +21,7 @@
       "Backend": "PyTorch",
       "Environment": "cuda-130",
       "HostVersion": "3.14",
-      "Version": 14,
+      "Version": 16,
       "IsDefault": true,
       "Status": "Create",
       "Variables": {
@@ -37,7 +37,7 @@
         "wheel==0.47.0",
         "transformers==5.13.1",
         "accelerate==1.14.0",
-        "diffusers==0.39.0",
+        "diffusers==0.40.0",
         "protobuf==7.35.1",
         "sentencepiece==0.2.2",
         "ftfy==6.3.1",
@@ -60,7 +60,7 @@
       "Backend": "PyTorch",
       "Environment": "rocm-721",
       "HostVersion": "3.12",
-      "Version": 14,
+      "Version": 16,
       "Status": "Create",
       "IsDefault": true,
       "Variables": {
@@ -80,7 +80,7 @@
         "wheel==0.47.0",
         "transformers==5.13.1",
         "accelerate==1.14.0",
-        "diffusers==0.39.0",
+        "diffusers==0.40.0",
         "protobuf==7.35.1",
         "sentencepiece==0.2.2",
         "ftfy==6.3.1",
@@ -102,11 +102,11 @@
       "Backend": "StableDiffusionCpp",
       "Environment": "vulkan",
       "HostVersion": "Vulkan",
-      "Version": 0,
+      "Version": 2,
       "Status": "Create",
       "Variables": {},
       "Requirements": [
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/sd-master-de298c2-bin-win-vulkan-x64.zip"
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/sd-master-97d2990-bin-win-vulkan-x64.zip"
       ]
     },
     {
@@ -117,12 +117,12 @@
       "Backend": "StableDiffusionCpp",
       "Environment": "vulkan",
       "HostVersion": "Vulkan",
-      "Version": 0,
+      "Version": 2,
       "Status": "Create",
       "IsDefault": true,
       "Variables": {},
       "Requirements": [
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/sd-master-de298c2-bin-win-vulkan-x64.zip"
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/sd-master-97d2990-bin-win-vulkan-x64.zip"
       ]
     },
     {
@@ -133,12 +133,12 @@
       "Backend": "StableDiffusionCpp",
       "Environment": "vulkan",
       "HostVersion": "Vulkan",
-      "Version": 0,
+      "Version": 2,
       "Status": "Create",
       "IsDefault": true,
       "Variables": {},
       "Requirements": [
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/sd-master-de298c2-bin-win-vulkan-x64.zip"
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/sd-master-97d2990-bin-win-vulkan-x64.zip"
       ]
     },
     {
@@ -149,13 +149,13 @@
       "Backend": "StableDiffusionCpp",
       "Environment": "cuda",
       "HostVersion": "CUDA",
-      "Version": 0,
+      "Version": 2,
       "Status": "Create",
       "IsDefault": true,
       "Variables": {},
       "Requirements": [
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/cudart-sd-bin-win-cu12-x64.zip",
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/sd-master-de298c2-bin-win-cuda12-x64.zip"
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/cudart-sd-bin-win-cu12-x64.zip",
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/sd-master-97d2990-bin-win-cuda12-x64.zip"
       ]
     },
 
@@ -167,11 +167,11 @@
       "Backend": "StableDiffusionCpp",
       "Environment": "rocm",
       "HostVersion": "ROCM",
-      "Version": 0,
+      "Version": 2,
       "Status": "Create",
       "Variables": {},
       "Requirements": [
-        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-820-de298c2/sd-master-de298c2-bin-win-rocm-7.14.0-x64.zip",
+        "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-827-97d2990/sd-master-97d2990-bin-win-rocm-7.14.0-x64.zip",
         "https://repo.amd.com/rocm/tarball-multi-arch/therock-dist-windows-multiarch-7.14.0.tar.gz"
       ]
     }
@@ -660,6 +660,37 @@
         "DownloadFiles": [
           "https://huggingface.co/saddam213/AutoEncoder/resolve/main/Wan21/config.json",
           "https://huggingface.co/saddam213/AutoEncoder/resolve/main/Wan21/diffusion_pytorch_model.safetensors"
+        ]
+      }
+    },
+    {
+      "Id": 211,
+      "Name": "Wan 2.2 AutoEncoder",
+      "Key": "VAE_Wan22",
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "Checkpoint": {
+        "Name": "Component",
+        "Type": "OnlineFolder",
+        "Folder": "AutoEncoder",
+        "Path": "Wan22",
+        "MainFile": "wan2.2_vae.safetensors",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors"
+        ]
+      }
+    },
+    {
+      "Id": 212,
+      "Name": "Wan 2.1 ClipVision",
+      "Key": "CV_Wan21",
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "Checkpoint": {
+        "Name": "Component",
+        "Type": "OnlineFolder",
+        "Folder": "AutoEncoder",
+        "MainFile": "clip_vision_h.safetensors",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors"
         ]
       }
     },
@@ -1269,6 +1300,51 @@
         "MainFile": "ltx-2.3-22b-distilled_audio_vae.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/unsloth/LTX-2.3-GGUF/resolve/main/vae/ltx-2.3-22b-distilled_audio_vae.safetensors"
+        ]
+      }
+    },
+    {
+      "Id": 560,
+      "Name": "MiniMax-H3 Audio Vae",
+      "Key": "AVAE_MMH3",
+      "Link": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "Checkpoint": {
+        "Name": "Component",
+        "Type": "OnlineFolder",
+        "Folder": "AutoEncoder",
+        "MainFile": "minimax_h3_audio_vae_fp32.safetensors",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"
+        ]
+      }
+    },
+    {
+      "Id": 561,
+      "Name": "MiniMax-H3 Video Vae",
+      "Key": "VAE_MMH3",
+      "Link": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "Checkpoint": {
+        "Name": "Component",
+        "Type": "OnlineFolder",
+        "Folder": "AutoEncoder",
+        "MainFile": "minimax_h3_video_vae_fp16.safetensors",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors"
+        ]
+      }
+    },
+    {
+      "Id": 562,
+      "Name": "MiniMax-H3 TextEncoder",
+      "Key": "TE_MMH3_GGUF",
+      "Link": "https://huggingface.co/unsloth/MiniMax-H3-GGUF",
+      "Checkpoint": {
+        "Name": "Component",
+        "Type": "OnlineFolder",
+        "Folder": "TextEncoder",
+        "MainFile": "qwen3vl_32b_minimax_h3-Q4_K_M.gguf",
+        "DownloadFiles": [
+          "https://huggingface.co/unsloth/MiniMax-H3-GGUF/resolve/main/qwen3vl_32b_minimax_h3-Q4_K_M.gguf"
         ]
       }
     }
@@ -10269,7 +10345,7 @@
       "ModelType": "Distilled",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -10422,7 +10498,7 @@
       "ModelType": "Base",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -11314,7 +11390,7 @@
       "ModelType": "Base",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -11463,7 +11539,7 @@
       "ModelType": "Turbo",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -11612,7 +11688,7 @@
       "ModelType": "Base",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -11760,7 +11836,7 @@
       "ModelType": "Turbo",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -12831,7 +12907,7 @@
       "ModelType": "Base",
       "BaseType": "bfloat16",
       "MediaType": "Image",
-      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint" ],
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
       "Checkpoint": {
         "Vae": {
           "Name": "AutoEncoder",
@@ -13543,13 +13619,1484 @@
         }
       ],
       "Link": "https://huggingface.co/unsloth/LTX-2.3-GGUF"
+    },
+    {
+      "Id": 590,
+      "Backend": "StableDiffusionCpp",
+      "Name": "StableDiffusion 3 Medium",
+      "Template": "SD3_Medium",
+      "Pipeline": "StableDiffusion3Pipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Image",
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_SD3"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_CLIP_L"
+        },
+        "TextEncoder2": {
+          "Name": "TextEncoder2",
+          "Type": "Component",
+          "Path": "TE_CLIP_G"
+        },
+        "TextEncoder3": {
+          "Name": "TextEncoder3",
+          "Type": "Component",
+          "Path": "TE_T5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 2, 4, 8 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 2, 6, 10 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 2, 8, 16 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 30,
+        "Width": 1024,
+        "Height": 1024,
+        "GuidanceScale": 7.0,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 640,
+          "Height": 1536
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        },
+        {
+          "Width": 832,
+          "Height": 1280
+        },
+        {
+          "Width": 896,
+          "Height": 1152
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024,
+          "IsDefault": true
+        },
+        {
+          "Width": 1152,
+          "Height": 896
+        },
+        {
+          "Width": 1280,
+          "Height": 832
+        },
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1536,
+          "Height": 640
+        }
+      ],
+      "AccessToken": "HuggingFace",
+      "Link": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers"
+    },
+    {
+      "Id": 591,
+      "Backend": "StableDiffusionCpp",
+      "Name": "StableDiffusion 3.5 Medium",
+      "Template": "SD35_Medium",
+      "Pipeline": "StableDiffusion3Pipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Image",
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_SD3"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_CLIP_L"
+        },
+        "TextEncoder2": {
+          "Name": "TextEncoder2",
+          "Type": "Component",
+          "Path": "TE_CLIP_G"
+        },
+        "TextEncoder3": {
+          "Name": "TextEncoder3",
+          "Type": "Component",
+          "Path": "TE_T5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/resolve/main/sd3.5_medium.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 2, 8, 12 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 2, 10, 18 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 2, 18, 28 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 30,
+        "Width": 1024,
+        "Height": 1024,
+        "GuidanceScale": 4.5,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 640,
+          "Height": 1536
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        },
+        {
+          "Width": 832,
+          "Height": 1280
+        },
+        {
+          "Width": 896,
+          "Height": 1152
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024,
+          "IsDefault": true
+        },
+        {
+          "Width": 1152,
+          "Height": 896
+        },
+        {
+          "Width": 1280,
+          "Height": 832
+        },
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1536,
+          "Height": 640
+        }
+      ],
+      "AccessToken": "HuggingFace",
+      "Link": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium"
+    },
+    {
+      "Id": 592,
+      "Backend": "StableDiffusionCpp",
+      "Name": "StableDiffusion 3.5 Large",
+      "Template": "SD35_Large",
+      "Pipeline": "StableDiffusion3Pipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Image",
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_SD3"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_CLIP_L"
+        },
+        "TextEncoder2": {
+          "Name": "TextEncoder2",
+          "Type": "Component",
+          "Path": "TE_CLIP_G"
+        },
+        "TextEncoder3": {
+          "Name": "TextEncoder3",
+          "Type": "Component",
+          "Path": "TE_T5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 2, 6, 10 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 2, 8, 12 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 2, 10, 18 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 30,
+        "Width": 1024,
+        "Height": 1024,
+        "GuidanceScale": 3.5,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 640,
+          "Height": 1536
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        },
+        {
+          "Width": 832,
+          "Height": 1280
+        },
+        {
+          "Width": 896,
+          "Height": 1152
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024,
+          "IsDefault": true
+        },
+        {
+          "Width": 1152,
+          "Height": 896
+        },
+        {
+          "Width": 1280,
+          "Height": 832
+        },
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1536,
+          "Height": 640
+        }
+      ],
+      "AccessToken": "HuggingFace",
+      "Link": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large"
+    },
+    {
+      "Id": 593,
+      "Backend": "StableDiffusionCpp",
+      "Name": "StableDiffusion 3.5 Large Turbo",
+      "Template": "SD35_Large",
+      "Pipeline": "StableDiffusion3Pipeline",
+      "ModelType": "Turbo",
+      "BaseType": "bfloat16",
+      "MediaType": "Image",
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_SD3"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_CLIP_L"
+        },
+        "TextEncoder2": {
+          "Name": "TextEncoder2",
+          "Type": "Component",
+          "Path": "TE_CLIP_G"
+        },
+        "TextEncoder3": {
+          "Name": "TextEncoder3",
+          "Type": "Component",
+          "Path": "TE_T5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo/resolve/main/sd3.5_large_turbo.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 2, 8, 12 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 2, 10, 18 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 2, 18, 28 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 4,
+        "Width": 1024,
+        "Height": 1024,
+        "GuidanceScale": 0,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 640,
+          "Height": 1536
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        },
+        {
+          "Width": 832,
+          "Height": 1280
+        },
+        {
+          "Width": 896,
+          "Height": 1152
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024,
+          "IsDefault": true
+        },
+        {
+          "Width": 1152,
+          "Height": 896
+        },
+        {
+          "Width": 1280,
+          "Height": 832
+        },
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1536,
+          "Height": 640
+        }
+      ],
+      "AccessToken": "HuggingFace",
+      "Link": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo"
+    },
+    {
+      "Id": 594,
+      "Backend": "StableDiffusionCpp",
+      "Name": "StableDiffusionXL",
+      "Template": "SDXL",
+      "Pipeline": "StableDiffusionXLPipeline",
+      "BaseType": "bfloat16",
+      "MediaType": "Image",
+      "ProcessTypes": [ "TextToImage", "ImageToImage", "ImageInpaint", "ImageControlNet", "ImageToImageControlNet" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_SDXL"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_CLIP_L"
+        },
+        "TextEncoder2": {
+          "Name": "TextEncoder2",
+          "Type": "Component",
+          "Path": "TE_CLIP_G"
+        },
+        "Unet": {
+          "Name": "Unet",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 2, 4, 8 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 2, 6, 10 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 2, 8, 16 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 30,
+        "Width": 1024,
+        "Height": 1024,
+        "GuidanceScale": 7.5,
+        "Scheduler": "EulerAncestral",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 640,
+          "Height": 1536
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        },
+        {
+          "Width": 832,
+          "Height": 1280
+        },
+        {
+          "Width": 896,
+          "Height": 1152
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024,
+          "IsDefault": true
+        },
+        {
+          "Width": 1152,
+          "Height": 896
+        },
+        {
+          "Width": 1280,
+          "Height": 832
+        },
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1536,
+          "Height": 640
+        }
+      ],
+      "Link": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
+    },
+    {
+      "Id": 600,
+      "Backend": "StableDiffusionCpp",
+      "Name": "Wan 2.2 5B",
+      "Template": "Wan22_5B_TI2V",
+      "Pipeline": "WanPipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Video",
+      "ProcessTypes": [ "TextToVideo", "ImageToVideo" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_Wan22"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_UMT5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/resolve/main/Wan2.2-TI2V-5B-Q8_0.gguf"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 8, 17, 31 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 30,
+        "Frames": 121,
+        "FrameRate": 24,
+        "Width": 1280,
+        "Height": 704,
+        "GuidanceScale": 5,
+        "IsVaeTilingEnabled": true,
+        "IsVaeSlicingEnabled": true,
+        "IsFirstFrameLastFrameEnabled": true,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ],
+        "Strength": 0.7,
+        "FrameOptions": [
+          25,
+          49,
+          73,
+          97,
+          121
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 1280,
+          "Height": 704,
+          "IsDefault": true
+        },
+        {
+          "Width": 1024,
+          "Height": 765
+        },
+        {
+          "Width": 960,
+          "Height": 960
+        },
+        {
+          "Width": 768,
+          "Height": 1024
+        },
+        {
+          "Width": 704,
+          "Height": 1280
+        },
+        {
+          "Width": 832,
+          "Height": 480
+        },
+        {
+          "Width": 640,
+          "Height": 480
+        },
+        {
+          "Width": 640,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 832
+        }
+      ],
+      "Link": "https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF"
+    },
+    {
+      "Id": 601,
+      "Backend": "StableDiffusionCpp",
+      "Name": "Wan 2.2 T2V 14B",
+      "Template": "Wan22_14B_T2V",
+      "Pipeline": "WanPipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Video",
+      "ProcessTypes": [ "TextToVideo" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_Wan21"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_UMT5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf"
+          ]
+        },
+        "Transformer2": {
+          "Name": "Transformer2",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 8, 17, 31 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 16,
+        "Steps2": 6,
+        "Frames": 81,
+        "FrameRate": 16,
+        "Width": 640,
+        "Height": 480,
+        "GuidanceScale": 4,
+        "GuidanceScale2": 3,
+        "IsVaeTilingEnabled": true,
+        "IsVaeSlicingEnabled": true,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ],
+        "Strength": 0.7,
+        "FrameOptions": [
+          17,
+          33,
+          49,
+          81,
+          113,
+          145,
+          177,
+          209,
+          241,
+          273
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 1280,
+          "Height": 704
+        },
+        {
+          "Width": 1024,
+          "Height": 765
+        },
+        {
+          "Width": 960,
+          "Height": 960
+        },
+        {
+          "Width": 768,
+          "Height": 1024
+        },
+        {
+          "Width": 704,
+          "Height": 1280
+        },
+        {
+          "Width": 832,
+          "Height": 480
+        },
+        {
+          "Width": 640,
+          "Height": 480,
+          "IsDefault": true
+        },
+        {
+          "Width": 640,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 832
+        }
+      ],
+      "Link": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF"
+    },
+    {
+      "Id": 602,
+      "Backend": "StableDiffusionCpp",
+      "Name": "Wan 2.2 I2V 14B",
+      "Template": "Wan22_14B_I2V",
+      "Pipeline": "WanPipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Video",
+      "ProcessTypes": [ "ImageToVideo" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_Wan21"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_UMT5_XXL"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q8_0.gguf"
+          ]
+        },
+        "Transformer2": {
+          "Name": "Transformer2",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q8_0.gguf"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 8, 17, 31 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 16,
+        "Steps2": 6,
+        "Frames": 81,
+        "FrameRate": 16,
+        "Width": 640,
+        "Height": 480,
+        "GuidanceScale": 4,
+        "GuidanceScale2": 3,
+        "IsVaeTilingEnabled": true,
+        "IsVaeSlicingEnabled": true,
+        "Scheduler": "Euler",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ],
+        "Strength": 0.7,
+        "FrameOptions": [
+          17,
+          33,
+          49,
+          81,
+          113,
+          145,
+          177,
+          209,
+          241,
+          273
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 1280,
+          "Height": 704
+        },
+        {
+          "Width": 1024,
+          "Height": 765
+        },
+        {
+          "Width": 960,
+          "Height": 960
+        },
+        {
+          "Width": 768,
+          "Height": 1024
+        },
+        {
+          "Width": 704,
+          "Height": 1280
+        },
+        {
+          "Width": 832,
+          "Height": 480
+        },
+        {
+          "Width": 640,
+          "Height": 480,
+          "IsDefault": true
+        },
+        {
+          "Width": 640,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 640
+        },
+        {
+          "Width": 480,
+          "Height": 832
+        }
+      ],
+      "Link": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF"
+    },
+    {
+      "Id": 620,
+      "Backend": "StableDiffusionCpp",
+      "Name": "MiniMax H3",
+      "Template": "MiniMax_H3",
+      "Pipeline": "MiniMaxVideoPipeline",
+      "ModelType": "Base",
+      "BaseType": "bfloat16",
+      "MediaType": "Video",
+      "ProcessTypes": [ "TextToVideo", "ImageToVideo" ],
+      "Checkpoint": {
+        "Vae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "VAE_MMH3"
+        },
+        "AudioVae": {
+          "Name": "AutoEncoder",
+          "Type": "Component",
+          "Path": "AVAE_MMH3"
+        },
+        "TextEncoder": {
+          "Name": "TextEncoder",
+          "Type": "Component",
+          "Path": "TE_MMH3_GGUF"
+        },
+        "Transformer": {
+          "Name": "Transformer",
+          "Type": "OnlineFile",
+          "DownloadFiles": [
+            "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+          ]
+        }
+      },
+      "MemoryProfile": [
+        {
+          "QualityMode": "Draft",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Standard",
+          "MemoryModes": [ 6, 17, 26 ]
+        },
+        {
+          "QualityMode": "Production",
+          "MemoryModes": [ 8, 17, 31 ]
+        }
+      ],
+      "DefaultOptions": {
+        "Steps": 20,
+        "Frames": 56,
+        "FrameRate": 24,
+        "Width": 864,
+        "Height": 480,
+        "GuidanceScale": 1,
+        "IsVaeTilingEnabled": true,
+        "IsVaeSlicingEnabled": true,
+        "IsFirstFrameLastFrameEnabled": true,
+        "Scheduler": "ResidualMultistep",
+        "Schedulers": [
+          {
+            "Scheduler": "Euler"
+          },
+          {
+            "Scheduler": "EulerAncestral"
+          },
+          {
+            "Scheduler": "DPM2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2SAncestral"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2M"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2Mv2"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDE"
+          },
+          {
+            "Scheduler": "DPMPlusPlus2MSDEBT"
+          },
+          {
+            "Scheduler": "ResidualMultistep",
+            "SigmaScheduleType": "Simple"
+          },
+          {
+            "Scheduler": "Residual2S"
+          },
+          {
+            "Scheduler": "Heun"
+          },
+          {
+            "Scheduler": "IPNDM"
+          },
+          {
+            "Scheduler": "LCM"
+          },
+          {
+            "Scheduler": "DDIM"
+          },
+          {
+            "Scheduler": "TCD"
+          },
+          {
+            "Scheduler": "LMS"
+          },
+          {
+            "Scheduler": "ERSDE"
+          }
+        ],
+        "Strength": 0.7,
+        "FrameOptions": [
+          5,
+          22,
+          39,
+          56,
+          73,
+          90,
+          107,
+          124,
+          158,
+          209,
+          260,
+          311,
+          362,
+          413,
+          464,
+          566,
+          668,
+          770,
+          872,
+          940,
+          991
+        ]
+      },
+      "Resolutions": [
+        {
+          "Width": 1344,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 576
+        },
+        {
+          "Width": 864,
+          "Height": 480,
+          "IsDefault": true
+        },
+        {
+          "Width": 768,
+          "Height": 768
+        },
+        {
+          "Width": 1024,
+          "Height": 1024
+        },
+        {
+          "Width": 480,
+          "Height": 864
+        },
+        {
+          "Width": 576,
+          "Height": 1024
+        },
+        {
+          "Width": 768,
+          "Height": 1344
+        }
+      ],
+      "Link": "https://huggingface.co/Comfy-Org/MiniMax-H3"
     }
   ],
   "LoraAdapterModels": [
     {
       "Id": 101,
       "Name": "40s Cyberpunk",
-      "RepoName": "zitloras",
       "Pipeline": "ZImagePipeline",
       "Key": "40scyberpunkz",
       "Checkpoint": {
@@ -13565,7 +15112,6 @@
     {
       "Id": 102,
       "Name": "80s Fantasy",
-      "RepoName": "zitloras",
       "Pipeline": "ZImagePipeline",
       "Key": "80sfantasy",
       "Checkpoint": {
@@ -13580,7 +15126,6 @@
     {
       "Id": 103,
       "Name": "Coloring Book Z",
-      "RepoName": "renderartist",
       "Pipeline": "ZImagePipeline",
       "Key": "coloringbookz",
       "Triggers": [ "c0l0ringb00k" ],
@@ -13596,7 +15141,6 @@
     {
       "Id": 201,
       "Name": "Camera Dolly-In",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "cameradollyin201",
       "Checkpoint": {
@@ -13612,7 +15156,6 @@
     {
       "Id": 202,
       "Name": "Camera Dolly-Out",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "cameradollyout202",
       "Checkpoint": {
@@ -13627,7 +15170,6 @@
     {
       "Id": 203,
       "Name": "Camera Dolly-Left",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "cameradollyleft203",
       "Checkpoint": {
@@ -13642,7 +15184,6 @@
     {
       "Id": 204,
       "Name": "Camera Dolly-Right",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "cameradollyright204",
       "Checkpoint": {
@@ -13657,7 +15198,6 @@
     {
       "Id": 205,
       "Name": "Camera Jib-Down",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "camerajibdown205",
       "Checkpoint": {
@@ -13672,7 +15212,6 @@
     {
       "Id": 206,
       "Name": "Camera Jib-Up",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "camerajibup206",
       "Checkpoint": {
@@ -13687,7 +15226,6 @@
     {
       "Id": 207,
       "Name": "Camera Static",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "camerastatic207",
       "Checkpoint": {
@@ -13702,7 +15240,6 @@
     {
       "Id": 208,
       "Name": "Detailer",
-      "RepoName": "Lightricks",
       "Pipeline": "LTX20Pipeline",
       "Key": "detailer208",
       "Checkpoint": {
@@ -13717,7 +15254,6 @@
     {
       "Id": 209,
       "Name": "Hyper-SDXL-8steps-CFG",
-      "RepoName": "ByteDance",
       "Pipeline": "StableDiffusionXLPipeline",
       "Key": "hypersdxl8stepscfg",
       "Checkpoint": {
@@ -13732,7 +15268,6 @@
     {
       "Id": 210,
       "Name": "Hyper-SD3-8steps-CFG",
-      "RepoName": "ByteDance",
       "Pipeline": "StableDiffusion3Pipeline",
       "Key": "hypersd38stepscfg",
       "Checkpoint": {
@@ -13747,7 +15282,6 @@
     {
       "Id": 211,
       "Name": "Hyper-FLUX.1-dev-8steps",
-      "RepoName": "ByteDance",
       "Pipeline": "FluxPipeline",
       "Key": "hyperflux1dev8steps",
       "Checkpoint": {
@@ -13762,7 +15296,6 @@
     {
       "Id": 212,
       "Name": "Sprite Sheet 4B",
-      "RepoName": "fal",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "spritesheet4b",
       "Triggers": [ "2x2 sprite sheet" ],
@@ -13778,7 +15311,6 @@
     {
       "Id": 213,
       "Name": "Background Remove 4B",
-      "RepoName": "fal",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "backgroundremove4b",
       "Checkpoint": {
@@ -13793,7 +15325,6 @@
     {
       "Id": 214,
       "Name": "Redbox Zoom 4B",
-      "RepoName": "fal",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "redboxzoom4b",
       "Checkpoint": {
@@ -13808,7 +15339,6 @@
     {
       "Id": 216,
       "Name": "Outpaint 4B",
-      "RepoName": "fal",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "outpaint4b",
       "Checkpoint": {
@@ -13823,7 +15353,6 @@
     {
       "Id": 217,
       "Name": "Virtual Try-On 9B",
-      "RepoName": "fal",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "virtualtryon9b",
       "Checkpoint": {
@@ -13838,7 +15367,6 @@
     {
       "Id": 218,
       "Name": "Consistency 9B",
-      "RepoName": "dx8152",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "consistency9b",
       "Checkpoint": {
@@ -13853,7 +15381,6 @@
     {
       "Id": 219,
       "Name": "Enhanced Details 9B",
-      "RepoName": "dx8152",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "enhanceddetails9b",
       "Checkpoint": {
@@ -13868,7 +15395,6 @@
     {
       "Id": 220,
       "Name": "Scribbly Doodle 4B",
-      "RepoName": "reverentelusarca",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "scribblydoodle4b",
       "Checkpoint": {
@@ -13883,7 +15409,6 @@
     {
       "Id": 221,
       "Name": "Scribbly Doodle 9B",
-      "RepoName": "reverentelusarca",
       "Pipeline": "Flux2KleinPipeline",
       "Key": "scribblydoodle9b",
       "Checkpoint": {
@@ -13898,7 +15423,6 @@
     {
       "Id": 240,
       "Name": "Highres/Aesthetic Boost",
-      "RepoName": "circlestone-labs",
       "Pipeline": "AnimaPipeline",
       "Key": "highresaestheticboost",
       "Checkpoint": {
@@ -13913,7 +15437,6 @@
     {
       "Id": 241,
       "Name": "Greg Rutkowski Style",
-      "RepoName": "circlestone-labs",
       "Pipeline": "AnimaPipeline",
       "Key": "gregrutkowski",
       "Checkpoint": {
@@ -13928,7 +15451,6 @@
     {
       "Id": 242,
       "Name": "Turbo (Step:8-12, CFG:1)",
-      "RepoName": "circlestone-labs",
       "Pipeline": "AnimaPipeline",
       "Key": "turbo",
       "Checkpoint": {
@@ -13943,7 +15465,6 @@
     {
       "Id": 243,
       "Name": "Anima RL",
-      "RepoName": "circlestone-labs",
       "Pipeline": "AnimaPipeline",
       "Key": "rl",
       "Checkpoint": {
@@ -13958,7 +15479,6 @@
     {
       "Id": 300,
       "Name": "Retro Anime",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "retroanime",
       "Triggers": [ "Purple retro anime style" ],
@@ -13974,7 +15494,6 @@
     {
       "Id": 301,
       "Name": "Soft Watercolor",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "softwatercolor",
       "Triggers": [ "Art Deco watercolor style" ],
@@ -13990,7 +15509,6 @@
     {
       "Id": 302,
       "Name": "Vintage Tarot",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "vintagetarot",
       "Triggers": [ "vintage tarot style" ],
@@ -14006,7 +15524,6 @@
     {
       "Id": 303,
       "Name": "Kids Drawing",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "kidsdrawing",
       "Triggers": [ "naive expressive sketch style" ],
@@ -14022,7 +15539,6 @@
     {
       "Id": 304,
       "Name": "Rainy Window",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "rainywindow",
       "Triggers": [ "rainy window style" ],
@@ -14038,7 +15554,6 @@
     {
       "Id": 305,
       "Name": "Sunset Blur",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "sunsetblur",
       "Triggers": [ "ethereal motion blur style" ],
@@ -14054,7 +15569,6 @@
     {
       "Id": 306,
       "Name": "Dark Brush",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "darkbrush",
       "Triggers": [ "monochrome ink wash style" ],
@@ -14070,7 +15584,6 @@
     {
       "Id": 307,
       "Name": "Dotmatrix",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "dotmatrix",
       "Triggers": [ "Monochrome stippling style" ],
@@ -14086,7 +15599,6 @@
     {
       "Id": 308,
       "Name": "Neon Drip",
-      "RepoName": "krea",
       "Pipeline": "Krea2Pipeline",
       "Key": "neondrip",
       "Triggers": [ "Textured abstract style" ],
@@ -14098,6 +15610,66 @@
         ]
       },
       "Link": "https://huggingface.co/krea/Krea-2-LoRA-neondrip"
+    },
+    {
+      "Id": 320,
+      "Name": "Wan 2.2 T2V (Step:4, CFG:1, HighNoise)",
+      "Pipeline": "WanPipeline",
+      "Key": "t2v4stepshigh",
+      "ViewFilter": [ "TextToVideo" ],
+      "Checkpoint": {
+        "Name": "LoraAdapter Model",
+        "Type": "OnlineFile",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors"
+        ]
+      },
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/loras"
+    },
+    {
+      "Id": 321,
+      "Name": "Wan 2.2 T2V (Step:4, CFG:1, LowNoise)",
+      "Pipeline": "WanPipeline",
+      "Key": "t2v4stepslow",
+      "ViewFilter": [ "TextToVideo" ],
+      "Checkpoint": {
+        "Name": "LoraAdapter Model",
+        "Type": "OnlineFile",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors"
+        ]
+      },
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/loras"
+    },
+    {
+      "Id": 322,
+      "Name": "Wan 2.2 I2V (Step:4, CFG:1, HighNoise)",
+      "Pipeline": "WanPipeline",
+      "Key": "i2v4stepshigh",
+      "ViewFilter": [ "ImageToVideo", "VideoToVideo" ],
+      "Checkpoint": {
+        "Name": "LoraAdapter Model",
+        "Type": "OnlineFile",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors"
+        ]
+      },
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/loras"
+    },
+    {
+      "Id": 323,
+      "Name": "Wan 2.2 I2V (Step:4, CFG:1, LowNoise)",
+      "Pipeline": "WanPipeline",
+      "Key": "i2v4stepslow",
+      "ViewFilter": [ "ImageToVideo", "VideoToVideo" ],
+      "Checkpoint": {
+        "Name": "LoraAdapter Model",
+        "Type": "OnlineFile",
+        "DownloadFiles": [
+          "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors"
+        ]
+      },
+      "Link": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/loras"
     }
   ],
   "ControlNetModels": [
@@ -14112,6 +15684,7 @@
         "Type": "OnlineFolder",
         "Folder": "QwenImage",
         "Path": "Qwen-Image-ControlNet-Union",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/InstantX/Qwen-Image-ControlNet-Union/resolve/main/config.json",
           "https://huggingface.co/InstantX/Qwen-Image-ControlNet-Union/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14134,6 +15707,7 @@
         "Type": "OnlineFolder",
         "Folder": "Flux1",
         "Path": "FLUX.1-dev-controlnet-canny",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/InstantX/FLUX.1-dev-controlnet-canny/resolve/main/config.json",
           "https://huggingface.co/InstantX/FLUX.1-dev-controlnet-canny/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14153,6 +15727,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-union-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14172,6 +15747,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-canny-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-canny-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-canny-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14190,6 +15766,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-depth-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-depth-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-depth-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14208,6 +15785,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-openpose-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14226,6 +15804,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-scribble-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-scribble-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-scribble-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14244,6 +15823,7 @@
         "Type": "OnlineFolder",
         "Folder": "StableDiffusionXL",
         "Path": "controlnet-tile-sdxl-1.0",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/xinsir/controlnet-tile-sdxl-1.0/resolve/main/config.json",
           "https://huggingface.co/xinsir/controlnet-tile-sdxl-1.0/resolve/main/diffusion_pytorch_model.safetensors"
@@ -14263,6 +15843,7 @@
         "Type": "OnlineFolder",
         "Folder": "ZImage",
         "Path": "Z-Image-Turbo-Fun-Controlnet-Union",
+        "MainFile": "diffusion_pytorch_model.safetensors",
         "DownloadFiles": [
           "https://huggingface.co/hlky/Z-Image-Turbo-Fun-Controlnet-Union/resolve/main/config.json",
           "https://huggingface.co/hlky/Z-Image-Turbo-Fun-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors"
