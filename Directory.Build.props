@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Version>3.7.1</Version>
+    <PackageVersion>0.10.1</PackageVersion>
+    <Copyright>sa_ddam213 - 2026</Copyright>
+    <RepositoryUrl>https://github.com/saddam213/AmuseAI</RepositoryUrl>
+    <Authors>sa_ddam213</Authors>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Configurations>Debug;Release;Release-Installer;</Configurations>
+  </PropertyGroup>
+</Project>
